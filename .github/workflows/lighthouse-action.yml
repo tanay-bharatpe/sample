@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: check token
-        run: echo ${{ secrets.SSH_TOKEN }}
+        run: echo "$secrets.SSH_TOKEN"
       - uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_TOKEN }}

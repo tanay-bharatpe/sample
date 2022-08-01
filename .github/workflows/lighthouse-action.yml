@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: check token
-        run: echo ${{ secrets.MY_TOKEN }}
       - uses: webfactory/ssh-agent@v0.5.4
         with:
-          ssh-private-key: ${{ secrets.MY_TOKEN }}
+          ssh-private-key: ${{ secrets.SSH_TOKEN }}
+      - name: check token
+        run: echo "$secrets.SSH_TOKEN"
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:

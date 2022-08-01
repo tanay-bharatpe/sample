@@ -1,0 +1,12 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tanay-bharatpe/sample.git",
+  "author": "Tanay Toshniwal <tanay.toshniwal@bharatpe.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "bharat-ui": "git+ssh://git@github.com:tanay-bharatpe/sample.git"
+  }
+}
